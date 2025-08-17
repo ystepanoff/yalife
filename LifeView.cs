@@ -87,8 +87,8 @@ public class LifeView : Control
         var dead = Brushes.Black;
         ctx.FillRectangle(dead, b);
         for (var y = 0; y < rows; y++)
-        for (var x = 0; x < cols; x++)
-            if (ViewModel[x, y])
-                ctx.FillRectangle(alive, new Rect(x * s + 1, y * s + 1, s - 2, s - 2));
+            for (var x = 0; x < cols; x++)
+                if (ViewModel[x, y])
+                    ctx.FillRectangle(alive, new Rect(x * s + 1, y * s + 1, s - 2, s - 2));
     }
 }
