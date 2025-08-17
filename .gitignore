@@ -1,0 +1,39 @@
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# .NET build output
+bin/
+obj/
+artifacts/
+
+# Generated code
+*.g.cs
+*.axaml.g.cs
+*.xaml.g.cs
+
+# IDE settings
+.vs/
+.idea/
+*.iml
+.rider/
+_ReSharper*/
+.ReSharper*/
+*.DotSettings.user
+
+# User-specific
+*.user
+*.suo
+*.userprefs
+*.rsuser
+
+# NuGet
+packages/
+*.nupkg
+*.snupkg
+.nuget/
+
+
