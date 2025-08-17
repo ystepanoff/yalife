@@ -1,0 +1,16 @@
+root = true
+
+[*.cs]
+indent_style = space
+indent_size = 4
+insert_final_newline = true
+
+[*.xaml]
+indent_style = space
+indent_size = 4
+insert_final_newline = true
+
+[*.axaml]
+indent_style = space
+indent_size = 4
+insert_final_newline = true
