@@ -39,15 +39,20 @@ public class LifeView : Control
             Dispatcher.UIThread.Post(InvalidateVisual);
     }
 
-    int lastCx = -1, lastCy = -1;
+    int lastCx = -1,
+        lastCy = -1;
+
     void ToggleCellAt(Point p)
     {
-        if (ViewModel == null) return;
+        if (ViewModel == null)
+            return;
         var s = ViewModel.CellSize;
         var cx = (int)(p.X / s);
         var cy = (int)(p.Y / s);
-        if (cx == lastCx && cy == lastCy) return;
-        lastCx = cx; lastCy = cy;
+        if (cx == lastCx && cy == lastCy)
+            return;
+        lastCx = cx;
+        lastCy = cy;
         ViewModel.ToggleAt(p);
         InvalidateVisual();
     }
@@ -63,14 +68,16 @@ public class LifeView : Control
     {
         base.OnPointerMoved(e);
         var props = e.GetCurrentPoint(this).Properties;
-        if (props.IsLeftButtonPressed) ToggleCellAt(e.GetPosition(this));
+        if (props.IsLeftButtonPressed)
+            ToggleCellAt(e.GetPosition(this));
     }
 
     protected override void OnPointerReleased(PointerReleasedEventArgs e)
     {
         base.OnPointerReleased(e);
         lastCx = lastCy = -1;
-        if (ReferenceEquals(e.Pointer.Captured, this)) e.Pointer.Capture(null);
+        if (ReferenceEquals(e.Pointer.Captured, this))
+            e.Pointer.Capture(null);
     }
 
     public override void Render(DrawingContext ctx)
@@ -87,8 +94,8 @@ public class LifeView : Control
         var dead = Brushes.Black;
         ctx.FillRectangle(dead, b);
         for (var y = 0; y < rows; y++)
-            for (var x = 0; x < cols; x++)
-                if (ViewModel[x, y])
-                    ctx.FillRectangle(alive, new Rect(x * s + 1, y * s + 1, s - 2, s - 2));
+        for (var x = 0; x < cols; x++)
+            if (ViewModel[x, y])
+                ctx.FillRectangle(alive, new Rect(x * s + 1, y * s + 1, s - 2, s - 2));
     }
 }

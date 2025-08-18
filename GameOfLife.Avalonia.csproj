@@ -4,6 +4,8 @@
     <TargetFramework>net8.0</TargetFramework>
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
+    <Title>Game of Life</Title>
+    <Product>Game of Life</Product>
   </PropertyGroup>
   <PropertyGroup>
     <AvaloniaVersion>11.0.6</AvaloniaVersion>

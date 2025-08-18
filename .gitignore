@@ -36,4 +36,4 @@ packages/
 *.snupkg
 .nuget/
 
-
+.vscode
