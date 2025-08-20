@@ -5,7 +5,7 @@ using Avalonia.Input;
 using Avalonia.Media;
 using Avalonia.Threading;
 
-namespace GameOfLife.AvaloniaApp;
+namespace GameOfLife.Avalonia;
 
 public class LifeView : Control
 {

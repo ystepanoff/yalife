@@ -1,6 +1,6 @@
 using System;
 
-namespace GameOfLife.AvaloniaApp;
+namespace GameOfLife.Avalonia;
 
 public class Grid
 {
@@ -28,6 +28,13 @@ public class Grid
         if (x < 0 || y < 0 || x >= cols || y >= rows)
             return;
         cells[y * cols + x] = !cells[y * cols + x];
+    }
+
+    public void Set(int x, int y, bool v)
+    {
+        if (x < 0 || y < 0 || x >= cols || y >= rows)
+            return;
+        cells[y * cols + x] = v;
     }
 
     public void Clear() => Array.Fill(cells, false);

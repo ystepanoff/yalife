@@ -1,7 +1,7 @@
 using Avalonia;
 using Avalonia.ReactiveUI;
 
-namespace GameOfLife.AvaloniaApp;
+namespace GameOfLife.Avalonia;
 
 class Program
 {

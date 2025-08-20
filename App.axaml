@@ -1,13 +1,8 @@
 <Application xmlns="https://github.com/avaloniaui"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:fluent="clr-namespace:Avalonia.Themes.Fluent;assembly=Avalonia.Themes.Fluent"
-             x:Class="GameOfLife.AvaloniaApp.App"
+             x:Class="GameOfLife.Avalonia.App"
              Name="Game of Life">
-  <NativeMenu.Menu>
-		<NativeMenu>
-			<NativeMenuItem Header="About Game of Life" Click="OnAboutClick" />
-		</NativeMenu>
-	</NativeMenu.Menu>
   <Application.Styles>
     <fluent:FluentTheme/>
   </Application.Styles>
