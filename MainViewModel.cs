@@ -4,7 +4,7 @@ using System.Text.Json;
 using System.Text.Json.Serialization;
 using System.Windows.Input;
 
-namespace GameOfLife.Avalonia;
+namespace YetAnotherLife;
 
 public class MainViewModel : INotifyPropertyChanged
 {

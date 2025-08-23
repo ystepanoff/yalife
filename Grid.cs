@@ -1,6 +1,6 @@
 using System;
 
-namespace GameOfLife.Avalonia;
+namespace YetAnotherLife;
 
 public class Grid
 {

@@ -8,7 +8,7 @@ using Avalonia.Markup.Xaml;
 using Avalonia.Platform.Storage;
 using Avalonia.Threading;
 
-namespace GameOfLife.Avalonia;
+namespace YetAnotherLife;
 
 public partial class App : Application
 {

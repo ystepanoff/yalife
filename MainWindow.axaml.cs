@@ -1,6 +1,6 @@
 using Avalonia.Controls;
 
-namespace GameOfLife.Avalonia;
+namespace YetAnotherLife;
 
 public partial class MainWindow : Window
 {
