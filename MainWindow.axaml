@@ -10,7 +10,7 @@
       <Button Content="Clear" Command="{Binding Clear}"/>
       <Button Content="Random" Command="{Binding Randomise}"/>
       <TextBlock VerticalAlignment="Center" Text="Speed"/>
-      <Slider Minimum="20" Maximum="500" Width="150" Value="{Binding IntervalMs}"/>
+      <Slider Minimum="5" Maximum="500" Width="150" Value="{Binding IntervalMs}" IsDirectionReversed="True"/>
       <TextBlock VerticalAlignment="Center" Text="Cell"/>
       <Slider Minimum="4" Maximum="20" Width="150" Value="{Binding CellSize}"/>
       <TextBlock VerticalAlignment="Center" Text="Wrap"/>
